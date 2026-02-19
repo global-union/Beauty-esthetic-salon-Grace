@@ -1,0 +1,175 @@
+/* =========================================================================
+   Access Page Styles
+   ========================================================================= */
+
+/* === Salon Info Box === */
+.salon-info-box {
+    display: flex;
+    gap: 40px;
+    background: var(--white);
+    box-shadow: var(--shadow-card);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+}
+
+.salon-info-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.salon-map {
+    flex: 1;
+    min-height: 400px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    border-left: 4px solid var(--gold);
+    padding-left: 16px;
+}
+
+.salon-dl {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.salon-dl__row {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+}
+
+.salon-dl__row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.salon-dl__row dt {
+    width: 100px;
+    font-weight: 500;
+    color: var(--gold);
+    flex-shrink: 0;
+}
+
+.salon-dl__row dd {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .salon-info-box {
+        flex-direction: column;
+    }
+
+    .salon-map {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .salon-info-content {
+        padding: 24px;
+    }
+
+    .salon-dl__row {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .salon-dl__row dt {
+        width: 100%;
+    }
+}
+
+
+/* === Route Guide === */
+.route-list {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.route-item {
+    display: flex;
+    gap: 30px;
+    background: var(--white);
+    padding: 20px;
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.route-item:last-child {
+    margin-bottom: 0;
+}
+
+.route-img {
+    width: 200px;
+    aspect-ratio: 4/3;
+    flex-shrink: 0;
+    border-radius: 4px;
+}
+
+.route-step {
+    display: block;
+    font-family: var(--font-logo);
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.route-text p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .route-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .route-img {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+}
+
+
+/* === Amenities === */
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.amenity-item {
+    text-align: center;
+}
+
+.amenity-img {
+    aspect-ratio: 16/9;
+    border-radius: var(--radius-card);
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-card);
+}
+
+.amenity-item h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.amenity-item p {
+    font-size: 14px;
+    color: var(--text-sub);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .amenities-grid {
+        grid-template-columns: 1fr;
+    }
+}

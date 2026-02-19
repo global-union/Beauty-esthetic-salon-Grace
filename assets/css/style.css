@@ -1,0 +1,183 @@
+/* =========================================================================
+   Grâce - Main Stylesheet
+   ========================================================================= */
+
+:root {
+  /* === Colors === */
+  --bg-main: #FAF9F6;
+  --bg-sub: #F5F0EB;
+  --gold: #C5A55A;
+  --gold-hover: #B08F3E;
+  --gold-light: rgba(197, 165, 90, 0.1);
+  --pink: #D7727C;
+  --green: #8BAA7E;
+  --blue: #7BA7C9;
+  --text-main: #333333;
+  --text-sub: #777777;
+  --white: #FFFFFF;
+  --border: #E5E0DA;
+  --line-green: #06C755;
+
+  /* === Fonts === */
+  --font-logo: 'Cormorant Garamond', serif;
+  --font-heading-jp: 'Noto Serif JP', serif;
+  --font-body: 'Noto Sans JP', sans-serif;
+
+  /* === Sizes === */
+  --section-padding: clamp(80px, 10vw, 160px);
+  --container-width: min(1200px, 90vw);
+  --header-height: 80px;
+  --header-height-mobile: 64px;
+
+  /* === Shadows === */
+  --shadow-card: 0 4px 20px rgba(0,0,0,0.06);
+  --shadow-hover: 0 8px 30px rgba(0,0,0,0.10);
+
+  /* === Radius === */
+  --radius-card: 8px;
+  --radius-btn: 4px;
+
+  /* === Transitions === */
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.6s ease;
+}
+
+/* =========================================================================
+   Reset & Base
+   ========================================================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-base);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* =========================================================================
+   Typography
+   ========================================================================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading-jp);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.text-gold { color: var(--gold); }
+.text-sub { color: var(--text-sub); }
+.text-center { text-align: center; }
+
+/* =========================================================================
+   Utilities
+   ========================================================================= */
+.container {
+  width: var(--container-width);
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--section-padding);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header__en {
+  display: block;
+  font-family: var(--font-logo);
+  color: var(--gold);
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.section-header__ja {
+  font-size: clamp(24px, 4vw, 32px);
+  margin-bottom: 24px;
+}
+
+.section-header__line {
+  width: 40px;
+  height: 1px;
+  background-color: var(--gold);
+  margin-inline: auto;
+}
+
+/* Scroll Animation */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.fade-in-up:nth-child(1) { transition-delay: 0.1s; }
+.fade-in-up:nth-child(2) { transition-delay: 0.2s; }
+.fade-in-up:nth-child(3) { transition-delay: 0.3s; }
+.fade-in-up:nth-child(4) { transition-delay: 0.4s; }
+
+/* Placeholder Image Base */
+.placeholder-img {
+  background: linear-gradient(135deg, var(--bg-sub) 0%, #e8ddd0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-sub);
+  font-family: var(--font-body);
+  font-size: 14px;
+  border-radius: var(--radius-card);
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder-img::after {
+  content: attr(data-label);
+  position: absolute;
+  padding: 4px 12px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+}

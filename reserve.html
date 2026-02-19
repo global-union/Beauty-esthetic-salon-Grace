@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ご予約・お問い合わせ | Grâce — 24時間受付中</title>
+    <meta name="description" content="Grâce（グラース）へのご予約・お問い合わせはこちら。WEBフォーム、LINE、お電話にて承っております。まずは無料カウンセリングからお気軽にどうぞ。">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/sub.css">
+    <link rel="stylesheet" href="assets/css/pages/reserve.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="header__logo">GRÂCE</a>
+        <nav class="header__nav">
+            <a href="concept.html">Concept</a>
+            <a href="menu.html">Menu</a>
+            <a href="price.html">Price</a>
+            <a href="voice.html">Voice</a>
+            <a href="staff.html">Staff</a>
+            <a href="access.html">Access</a>
+            <a href="reserve.html" class="header__cta">ご予約</a>
+        </nav>
+        <a href="tel:03-1234-5678" class="header__tel">Tel. 03-1234-5678</a>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <nav class="mobile-menu__nav">
+            <a href="index.html" class="mobile-menu__link">Top</a>
+            <a href="concept.html" class="mobile-menu__link">Concept</a>
+            <a href="menu.html" class="mobile-menu__link">Menu</a>
+            <a href="price.html" class="mobile-menu__link">Price</a>
+            <a href="voice.html" class="mobile-menu__link">Voice</a>
+            <a href="staff.html" class="mobile-menu__link">Staff</a>
+            <a href="access.html" class="mobile-menu__link">Access</a>
+        </nav>
+        <a href="reserve.html" class="btn btn-primary" style="margin-bottom: 20px;">24時間WEB予約</a>
+        <a href="tel:03-1234-5678" class="text-sub">Tel. 03-1234-5678</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="sub-hero">
+        <img src="assets/images/hero_reserve.webp" alt="Reserve Hero" class="sub-hero__bg">
+        <div class="sub-hero__overlay"></div>
+        <div class="sub-hero__content fade-in-up">
+            <h1 class="sub-hero__title">Reserve</h1>
+            <p class="sub-hero__sub">ご予約・お問い合わせ</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li>ご予約・お問い合わせ</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Reserve Methods (LINE & Phone) -->
+    <section class="section container">
+        <div class="reserve-methods fade-in-up">
+            <!-- LINE -->
+            <div class="reserve-card line-card">
+                <div class="reserve-card__icon line-icon">LINE</div>
+                <h3 class="reserve-card__title">LINEで簡単予約</h3>
+                <p class="reserve-card__text">友だち追加で、24時間いつでも予約・変更が可能です。お得なクーポンも配信中！</p>
+                <a href="#" class="btn btn-outline" style="border-color: #06c755; color: #06c755;">友だち追加する</a>
+            </div>
+            <!-- Phone -->
+            <div class="reserve-card phone-card">
+                <div class="reserve-card__icon phone-icon">TEL</div>
+                <h3 class="reserve-card__title">お電話で予約</h3>
+                <p class="reserve-card__text">お急ぎの方や、詳しく相談したい方はお電話にて承ります。</p>
+                <a href="tel:03-1234-5678" class="reserve-phone-link">03-1234-5678</a>
+                <span class="reserve-hours">受付時間: 11:00〜21:00</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Form -->
+    <section class="section bg-sub" id="web-form">
+        <div class="container" style="max-width: 800px;">
+            <div class="section-header fade-in-up">
+                <span class="section-header__en">Web Reservation</span>
+                <h2 class="section-header__ja">WEB予約フォーム</h2>
+                <div class="section-header__line"></div>
+            </div>
+
+            <form class="reserve-form fade-in-up" id="reservationForm" novalidate>
+
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name" class="form-label">お名前 <span class="required">必須</span></label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="例：山田 花子" required>
+                    <span class="error-msg">お名前を入力してください</span>
+                </div>
+
+                <!-- Kana -->
+                <div class="form-group">
+                    <label for="kana" class="form-label">フリガナ <span class="required">必須</span></label>
+                    <input type="text" id="kana" name="kana" class="form-input" placeholder="例：ヤマダ ハナコ" required>
+                    <span class="error-msg">フリガナを入力してください</span>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email" class="form-label">メールアドレス <span class="required">必須</span></label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="例：example@grace.com"
+                        required>
+                    <span class="error-msg">有効なメールアドレスを入力してください</span>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone" class="form-label">電話番号 <span class="required">必須</span></label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="例：090-1234-5678" required>
+                    <span class="error-msg">電話番号を入力してください</span>
+                </div>
+
+                <!-- Menu -->
+                <div class="form-group">
+                    <label for="menu" class="form-label">ご希望メニュー <span class="required">必須</span></label>
+                    <select id="menu" name="menu" class="form-select" required>
+                        <option value="" disabled selected>選択してください</option>
+                        <option value="counseling">無料カウンセリング</option>
+                        <option value="facial_premium">プレミアムフェイシャル</option>
+                        <option value="facial_hydra">毛穴洗浄ハイドラフェイシャル</option>
+                        <option value="body_cavitation">キャビテーション痩身</option>
+                        <option value="body_aroma">アロマリンパマッサージ</option>
+                        <option value="removal_full">全身脱毛</option>
+                        <option value="bridal">ブライダルご相談</option>
+                        <option value="other">その他・相談して決めたい</option>
+                    </select>
+                    <span class="error-msg">メニューを選択してください</span>
+                </div>
+
+                <!-- Date -->
+                <div class="form-group">
+                    <label for="date" class="form-label">ご希望日時（第1希望） <span class="required">必須</span></label>
+                    <div class="date-group">
+                        <input type="date" id="date" name="date" class="form-input" required>
+                        <select id="time" name="time" class="form-select" style="width: 120px;" required>
+                            <option value="" disabled selected>時間</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                    </div>
+                    <span class="error-msg">日時を選択してください</span>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message" class="form-label">ご質問・ご要望</label>
+                    <textarea id="message" name="message" class="form-textarea"
+                        placeholder="お肌の悩みや、ご質問などございましたらご記入ください。"></textarea>
+                </div>
+
+                <!-- Submit -->
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary btn-large btn-pulse">予約内容を確認する</button>
+                    <p class="form-note">※ まだ予約は確定しません。確認画面へ進みます。</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section container" style="max-width: 800px;">
+        <div class="section-header fade-in-up">
+            <span class="section-header__en">FAQ</span>
+            <h2 class="section-header__ja">よくあるご質問</h2>
+            <div class="section-header__line"></div>
+        </div>
+
+        <div class="notes-acc-wrapper fade-in-up">
+            <div class="accordion">
+                <div class="accordion-header">
+                    未成年でも利用できますか？
+                    <span class="acc-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <p>はい、ご利用いただけます。ただし、未成年（18歳未満）のお客様は親権者様の同意書が必要となります。初回ご来店時にご同伴いただくか、同意書をご持参ください。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    クレジットカードは使えますか？
+                    <span class="acc-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <p>はい、VISA、MasterCard、JCB、American Express、Diners Clubなどがご利用いただけます。分割払いも可能です。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    2人同時に予約できますか？
+                    <span class="acc-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <p>はい、可能です。お部屋の空き状況によりますので、お早めにご予約いただくか、お電話にてお問い合わせください。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-header">
+                    勧誘はありますか？
+                    <span class="acc-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <p>無理な勧誘は一切ございませんのでご安心ください。お客様のお悩みやご予算に合わせた最適なプランのみをご提案させていただきます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__col">
+                    <a href="index.html" class="footer__logo">GRÂCE</a>
+                    <p style="margin-bottom: 16px;">表参道のトータルビューティーサロン。<br>完全個室で上質なひとときを。</p>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__links">
+                        <li><a href="concept.html">Concept - コンセプト</a></li>
+                        <li><a href="menu.html">Menu - 施術メニュー</a></li>
+                        <li><a href="price.html">Price - 料金表</a></li>
+                        <li><a href="voice.html">Voice - お客様の声</a></li>
+                        <li><a href="staff.html">Staff - スタッフ紹介</a></li>
+                        <li><a href="access.html">Access - アクセス</a></li>
+                        <li><a href="reserve.html">Reserve - ご予約</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <p><strong>Grâce（グラース）</strong></p>
+                    <p>〒150-0001<br>東京都渋谷区神宮前4-XX-XX 〇〇ビル3F</p>
+                    <br>
+                    <p><a href="tel:03-1234-5678">03-1234-5678</a></p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Grâce Total Beauty Salon. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal (Confirmation) -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h3>ご予約ありがとうございます</h3>
+            </div>
+            <div class="modal-body">
+                <p class="modal-lead">以下の内容で送信しました。<br>店舗からの確認連絡をお待ちください。</p>
+                <div class="modal-check-icon">✓</div>
+                <p style="font-size: 14px; color: #777;">（※これはデモサイトのため、実際の予約は行われません）</p>
+            </div>
+            <button class="btn btn-primary btn-large modal-btn">トップページへ戻る</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/reserve.js"></script>
+</body>
+
+</html>

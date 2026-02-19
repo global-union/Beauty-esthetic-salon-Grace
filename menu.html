@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>施術メニュー | Grâce — フェイシャル・ボディ・脱毛</title>
+    <meta name="description" content="Grâce（グラース）の施術メニュー一覧。フェイシャル、ボディ、脱毛、ブライダルなど、豊富なメニューをご用意しています。">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/sub.css">
+    <link rel="stylesheet" href="assets/css/pages/menu.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="header__logo">GRÂCE</a>
+        <nav class="header__nav">
+            <a href="concept.html">Concept</a>
+            <a href="menu.html">Menu</a>
+            <a href="price.html">Price</a>
+            <a href="voice.html">Voice</a>
+            <a href="staff.html">Staff</a>
+            <a href="access.html">Access</a>
+            <a href="reserve.html" class="header__cta">ご予約</a>
+        </nav>
+        <a href="tel:03-1234-5678" class="header__tel">Tel. 03-1234-5678</a>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <nav class="mobile-menu__nav">
+            <a href="index.html" class="mobile-menu__link">Top</a>
+            <a href="concept.html" class="mobile-menu__link">Concept</a>
+            <a href="menu.html" class="mobile-menu__link">Menu</a>
+            <a href="price.html" class="mobile-menu__link">Price</a>
+            <a href="voice.html" class="mobile-menu__link">Voice</a>
+            <a href="staff.html" class="mobile-menu__link">Staff</a>
+            <a href="access.html" class="mobile-menu__link">Access</a>
+        </nav>
+        <a href="reserve.html" class="btn btn-primary" style="margin-bottom: 20px;">24時間WEB予約</a>
+        <a href="tel:03-1234-5678" class="text-sub">Tel. 03-1234-5678</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="sub-hero">
+        <img src="assets/images/hero_menu.webp" alt="Menu Hero" class="sub-hero__bg">
+        <div class="sub-hero__overlay"></div>
+        <div class="sub-hero__content fade-in-up">
+            <h1 class="sub-hero__title">Menu</h1>
+            <p class="sub-hero__sub">施術メニュー</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li>施術メニュー</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Tag Nav (Concerns) -->
+    <section class="section container" style="padding-bottom: 0;">
+        <h2 class="text-center" style="font-size: 16px; margin-bottom: 20px; color: var(--text-sub);">お悩みから探す</h2>
+        <div class="tag-nav">
+            <button class="tag-btn" data-target="facial">#毛穴・くすみ</button>
+            <button class="tag-btn" data-target="facial">#たるみ・シワ</button>
+            <button class="tag-btn" data-target="body">#痩身・引き締め</button>
+            <button class="tag-btn" data-target="removal">#ムダ毛</button>
+            <button class="tag-btn" data-target="bridal">#ブライダル</button>
+        </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <section class="section container">
+        <div class="tab-header">
+            <button class="tab-btn is-active" data-tab="facial">Facial</button>
+            <button class="tab-btn" data-tab="body">Body</button>
+            <button class="tab-btn" data-tab="removal">Depilation</button>
+            <button class="tab-btn" data-tab="bridal">Bridal</button>
+        </div>
+
+        <!-- Tab Content: Facial -->
+        <div class="tab-content is-active" id="facial">
+            <div class="section-header">
+                <span class="section-header__en">Facial</span>
+                <h2 class="section-header__ja">フェイシャル</h2>
+                <div class="section-header__line"></div>
+            </div>
+            <div class="menu-list">
+                <!-- Item -->
+                <div class="menu-item fade-in-up">
+                    <div class="menu-item__img placeholder-img" data-label="Facial"
+                        style="background: linear-gradient(135deg, #f5e6e8, #edd4d8);"></div>
+                    <div class="menu-item__info">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">プレミアムフェイシャル</h3>
+                            <span class="menu-item__time">60分</span>
+                        </div>
+                        <p class="menu-item__desc">ヒト幹細胞培養液を贅沢に使用し、肌の土台から立て直す至高のエイジングケア。毛穴洗浄付き。</p>
+                        <div class="menu-item__price">
+                            <span class="price-normal">¥11,000</span>
+                            <span class="price-first text-gold">初回 ¥5,500</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="menu-item fade-in-up">
+                    <div class="menu-item__img placeholder-img" data-label="Facial"
+                        style="background: linear-gradient(135deg, #f5e6e8, #edd4d8);"></div>
+                    <div class="menu-item__info">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">毛穴洗浄ハイドラフェイシャル</h3>
+                            <span class="menu-item__time">45分</span>
+                        </div>
+                        <p class="menu-item__desc">水素水を使った吸引洗浄で、頑固な黒ずみや角栓をごっそりオフ。透明感のある肌へ。</p>
+                        <div class="menu-item__price">
+                            <span class="price-normal">¥8,800</span>
+                            <span class="price-first text-gold">初回 ¥4,400</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="menu-item fade-in-up">
+                    <div class="menu-item__img placeholder-img" data-label="Facial"
+                        style="background: linear-gradient(135deg, #f5e6e8, #edd4d8);"></div>
+                    <div class="menu-item__info">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">小顔コルギ（骨気）</h3>
+                            <span class="menu-item__time">60分</span>
+                        </div>
+                        <p class="menu-item__desc">骨と筋肉にアプローチし、リフトアップと小顔効果を実現。イタ気持ちいい手技が人気。</p>
+                        <div class="menu-item__price">
+                            <span class="price-normal">¥9,900</span>
+                            <span class="price-first text-gold">初回 ¥4,950</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="menu-item fade-in-up">
+                    <div class="menu-item__img placeholder-img" data-label="Facial"
+                        style="background: linear-gradient(135deg, #f5e6e8, #edd4d8);"></div>
+                    <div class="menu-item__info">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">光フォトフェイシャル</h3>
+                            <span class="menu-item__time">50分</span>
+                        </div>
+                        <p class="menu-item__desc">特殊な光を照射し、シミ・くすみ・赤ら顔を改善。コラーゲン生成も促進します。</p>
+                        <div class="menu-item__price">
+                            <span class="price-normal">¥12,000</span>
+                            <span class="price-first text-gold">初回 ¥6,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-cta">
+                <a href="reserve.html" class="btn btn-primary btn-large">フェイシャルを予約する</a>
+            </div>
+        </div>
+
+        <!-- Tab Content: Body -->
+        <div class="tab-content" id="body">
+            <div class="section-header">
+                <span class="section-header__en">Body</span>
+                <h2 class="section-header__ja">ボディ・痩身</h2>
+                <div class="section-header__line"></div>
+            </div>
+            <div class="menu-list">
+                <!-- Item -->
+                <div class="menu-item fade-in-up">
+                    <div class="menu-item__img placeholder-img" data-label="Body"
+                        style="background: linear-gradient(135deg, #e6efe3, #d4e5cf);"></div>
+                    <div class="menu-item__info">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">キャビテーション痩身</h3>
+                            <span class="menu-item__time">60分</span>
+                        </div>
+                        <p class="menu-item__desc">「切らない脂肪吸引」とも呼ばれるマシンで脂肪を乳化。ラジオ波との相乗効果でサイズダウン。</p>
+                        <div class="menu-item__price">
+                            <span class="price-normal">¥13,200</span>
+                            <span class="price-first text-gold">初回 ¥6,600</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="menu-item fade-in-up">
+                    <div class="menu-item__img placeholder-img" data-label="Body"
+                        style="background: linear-gradient(135deg, #e6efe3, #d4e5cf);"></div>
+                    <div class="menu-item__info">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">アロマリンパマッサージ</h3>
+                            <span class="menu-item__time">90分</span>
+                        </div>
+                        <p class="menu-item__desc">厳選されたオーガニックオイルを使用し、全身のリンパを流します。疲労回復・むくみ解消に。</p>
+                        <div class="menu-item__price">
+                            <span class="price-normal">¥15,000</span>
+                            <span class="price-first text-gold">初回 ¥7,500</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="menu-item fade-in-up">
+                    <div class="menu-item__img placeholder-img" data-label="Body"
+                        style="background: linear-gradient(135deg, #e6efe3, #d4e5cf);"></div>
+                    <div class="menu-item__info">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">筋膜リリース</h3>
+                            <span class="menu-item__time">60分</span>
+                        </div>
+                        <p class="menu-item__desc">癒着した筋膜を剥がし、身体の歪みを整えます。可動域が広がり、代謝アップも期待できます。</p>
+                        <div class="menu-item__price">
+                            <span class="price-normal">¥11,000</span>
+                            <span class="price-first text-gold">初回 ¥5,500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-cta">
+                <a href="reserve.html" class="btn btn-primary btn-large">ボディメニューを予約する</a>
+            </div>
+        </div>
+
+        <!-- Tab Content: Removal -->
+        <div class="tab-content" id="removal">
+            <div class="section-header">
+                <span class="section-header__en">Depilation</span>
+                <h2 class="section-header__ja">脱毛</h2>
+                <div class="section-header__line"></div>
+            </div>
+            <div class="menu-list">
+                <!-- Item -->
+                <div class="menu-item fade-in-up">
+                    <div class="menu-item__img placeholder-img" data-label="Removal"
+                        style="background: linear-gradient(135deg, #e2ecf3, #cfdded);"></div>
+                    <div class="menu-item__info">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">全身脱毛（VIO込み・顔なし）</h3>
+                            <span class="menu-item__time">90分</span>
+                        </div>
+                        <p class="menu-item__desc">最新のSHR方式脱毛で、痛みが少なくスピーディー。産毛や日焼け肌にも対応可能です。</p>
+                        <div class="menu-item__price">
+                            <span class="price-normal">¥19,800</span>
+                            <span class="price-first text-gold">初回 ¥9,900</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="menu-item fade-in-up">
+                    <div class="menu-item__img placeholder-img" data-label="Removal"
+                        style="background: linear-gradient(135deg, #e2ecf3, #cfdded);"></div>
+                    <div class="menu-item__info">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">VIO脱毛</h3>
+                            <span class="menu-item__time">30分</span>
+                        </div>
+                        <p class="menu-item__desc">デリケートゾーンの悩みも解消。清潔感アップで、介護脱毛としても人気です。</p>
+                        <div class="menu-item__price">
+                            <span class="price-normal">¥8,800</span>
+                            <span class="price-first text-gold">初回 ¥4,400</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-cta">
+                <a href="reserve.html" class="btn btn-primary btn-large">脱毛メニューを予約する</a>
+            </div>
+        </div>
+
+        <!-- Tab Content: Bridal -->
+        <div class="tab-content" id="bridal">
+            <div class="section-header">
+                <span class="section-header__en">Bridal</span>
+                <h2 class="section-header__ja">ブライダル</h2>
+                <div class="section-header__line"></div>
+            </div>
+            <div class="menu-list">
+                <!-- Item -->
+                <div class="menu-item fade-in-up">
+                    <div class="menu-item__img placeholder-img" data-label="Bridal"
+                        style="background: linear-gradient(135deg, #f5f0e0, #ede5cc);"></div>
+                    <div class="menu-item__info">
+                        <div class="menu-item__header">
+                            <h3 class="menu-item__title">1Day集中プラン</h3>
+                            <span class="menu-item__time">150分</span>
+                        </div>
+                        <p class="menu-item__desc">式直前の駆け込みに。フェイシャル・背中・二の腕・デコルテをトータルケア。</p>
+                        <div class="menu-item__price">
+                            <span class="price-normal">¥33,000</span>
+                            <span class="price-first text-gold">初回 ¥25,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-cta">
+                <a href="reserve.html" class="btn btn-primary btn-large">ブライダルメニューを予約する</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CTA Common -->
+    <section class="section cta-section">
+        <div class="container fade-in-up">
+            <h2 class="cta-title">まずは無料カウンセリングから</h2>
+            <p class="cta-sub">どのメニューが合うかわからない方は、お気軽にご相談ください。</p>
+            <a href="reserve.html" class="btn btn-primary btn-large btn-pulse"
+                style="margin-bottom: 24px;">無料カウンセリングを予約する</a>
+            <div class="cta-tel">
+                <a href="tel:03-1234-5678">Tel. 03-1234-5678</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__col">
+                    <a href="index.html" class="footer__logo">GRÂCE</a>
+                    <p style="margin-bottom: 16px;">表参道のトータルビューティーサロン。<br>完全個室で上質なひとときを。</p>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__links">
+                        <li><a href="concept.html">Concept - コンセプト</a></li>
+                        <li><a href="menu.html">Menu - 施術メニュー</a></li>
+                        <li><a href="price.html">Price - 料金表</a></li>
+                        <li><a href="voice.html">Voice - お客様の声</a></li>
+                        <li><a href="staff.html">Staff - スタッフ紹介</a></li>
+                        <li><a href="access.html">Access - アクセス</a></li>
+                        <li><a href="reserve.html">Reserve - ご予約</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <p><strong>Grâce（グラース）</strong></p>
+                    <p>〒150-0001<br>東京都渋谷区神宮前4-XX-XX 〇〇ビル3F</p>
+                    <br>
+                    <p><a href="tel:03-1234-5678">03-1234-5678</a></p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Grâce Total Beauty Salon. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+
+</html>

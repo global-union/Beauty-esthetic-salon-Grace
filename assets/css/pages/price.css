@@ -1,0 +1,286 @@
+/* =========================================================================
+   Price Page Styles
+   ========================================================================= */
+
+/* === Reassurance Banner === */
+.reassurance-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--bg-sub);
+    padding: 16px 24px;
+    border-radius: var(--radius-card);
+    text-align: center;
+    border: 1px solid var(--gold-light);
+}
+
+.reassurance-icon {
+    font-size: 20px;
+}
+
+@media (max-width: 480px) {
+    .reassurance-banner {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+
+/* === Price Tables === */
+.price-category {
+    margin-bottom: 80px;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    box-shadow: var(--shadow-card);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+}
+
+.price-table th,
+.price-table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.price-table th {
+    background: var(--bg-sub);
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+.price-table tr:last-child td {
+    border-bottom: none;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+/* Responsive Table (Card View on Mobile) */
+@media (max-width: 768px) {
+    .price-table thead {
+        display: none;
+        /* Hide headers */
+    }
+
+    .price-table tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-card);
+        background: var(--white);
+    }
+
+    .price-table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--bg-sub);
+        padding: 12px 16px;
+    }
+
+    .price-table td:last-child {
+        border-bottom: none;
+    }
+
+    .price-table td::before {
+        content: attr(data-label);
+        font-weight: 500;
+        color: var(--text-sub);
+        font-size: 13px;
+    }
+}
+
+
+/* === Recommended Courses === */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+.course-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: var(--radius-card);
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    position: relative;
+    border: 1px solid transparent;
+    transition: var(--transition-base);
+}
+
+.course-card--featured {
+    border-color: var(--gold);
+    transform: scale(1.05);
+    box-shadow: var(--shadow-hover);
+    z-index: 1;
+}
+
+.course-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    color: var(--white);
+    padding: 6px 20px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.course-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.course-title span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-sub);
+}
+
+.course-price {
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.course-amount {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--font-logo);
+}
+
+.course-period {
+    font-size: 14px;
+    color: var(--text-sub);
+}
+
+.course-desc {
+    font-size: 14px;
+    color: var(--text-sub);
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.course-list {
+    text-align: left;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+}
+
+.course-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 14px;
+}
+
+.course-list li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+    .course-card--featured {
+        transform: none;
+    }
+}
+
+
+/* === Payment & Notes === */
+.payment-box {
+    background: var(--bg-main);
+    border: 1px solid var(--border);
+    padding: 30px;
+    border-radius: var(--radius-card);
+    margin-bottom: 60px;
+}
+
+.payment-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.payment-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.payment-item {
+    background: var(--white);
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.payment-note {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-sub);
+}
+
+/* Accordion Styles */
+.notes-acc-wrapper {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.accordion {
+    border-bottom: 1px solid var(--border);
+}
+
+.accordion-header {
+    padding: 20px 0;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.accordion-header:hover {
+    color: var(--gold);
+}
+
+.acc-icon {
+    font-size: 20px;
+    transition: transform 0.3s;
+    color: var(--gold);
+}
+
+.accordion-header.is-active .acc-icon {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.accordion-inner {
+    padding-bottom: 30px;
+    font-size: 14px;
+    color: var(--text-sub);
+    line-height: 1.8;
+}

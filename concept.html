@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コンセプト | Grâce — 私たちが大切にしていること</title>
+    <meta name="description" content="Grâce（グラース）のコンセプト。一人ひとりに寄り添うカウンセリング、オーダーメイド施術、上質な空間で、あなたの「なりたい」を叶えます。">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages/sub.css">
+    <link rel="stylesheet" href="assets/css/pages/concept.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header is-scrolled">
+        <!-- Always solid on sub pages or handle via JS? Let's use JS logic but maybe force it initially if needed. Actually standard JS handles scroll. For sub pages, maybe we want it solid always or transparent over hero? Let's stick to transparent over hero. -->
+        <a href="index.html" class="header__logo">GRÂCE</a>
+        <nav class="header__nav">
+            <a href="concept.html">Concept</a>
+            <a href="menu.html">Menu</a>
+            <a href="price.html">Price</a>
+            <a href="voice.html">Voice</a>
+            <a href="staff.html">Staff</a>
+            <a href="access.html">Access</a>
+            <a href="reserve.html" class="header__cta">ご予約</a>
+        </nav>
+        <a href="tel:03-1234-5678" class="header__tel">Tel. 03-1234-5678</a>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <nav class="mobile-menu__nav">
+            <a href="index.html" class="mobile-menu__link">Top</a>
+            <a href="concept.html" class="mobile-menu__link">Concept</a>
+            <a href="menu.html" class="mobile-menu__link">Menu</a>
+            <a href="price.html" class="mobile-menu__link">Price</a>
+            <a href="voice.html" class="mobile-menu__link">Voice</a>
+            <a href="staff.html" class="mobile-menu__link">Staff</a>
+            <a href="access.html" class="mobile-menu__link">Access</a>
+        </nav>
+        <a href="reserve.html" class="btn btn-primary" style="margin-bottom: 20px;">24時間WEB予約</a>
+        <a href="tel:03-1234-5678" class="text-sub">Tel. 03-1234-5678</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="sub-hero">
+        <img src="assets/images/hero_concept.webp" alt="Concept Hero" class="sub-hero__bg">
+        <div class="sub-hero__overlay"></div>
+        <div class="sub-hero__content fade-in-up">
+            <h1 class="sub-hero__title">Concept</h1>
+            <p class="sub-hero__sub">私たちが大切にしていること</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li>コンセプト</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Message -->
+    <section class="section container">
+        <div class="message-box fade-in-up">
+            <div class="message-img placeholder-img" data-label="Owner Portrait"
+                style="background: linear-gradient(135deg, #f2ede8, #e8e0d6);"></div>
+            <div class="message-content">
+                <span class="message-label">Representative Message</span>
+                <h2 class="message-title">あなたの「なりたい」に<br>一番近くで寄り添う場所</h2>
+                <div class="message-text">
+                    <p>私がこのサロンを開いたのは、かつて自分自身が肌トラブルに悩み、一人のエスティシャンとの出会いで人生が変わった経験があるからです。</p>
+                    <p>技術はもちろん大切ですが、それ以上に大切なのは、お客様のお話に耳を傾け、心に寄り添うこと。</p>
+                    <p>Grâceでは、施術の技術だけでなく、カウンセリングの質にも徹底的にこだわっています。あなたの『なりたい自分』に近づくお手伝いを、私たちに任せてください。</p>
+                </div>
+                <div class="message-sign">
+                    <p>代表エスティシャン</p>
+                    <p class="sign-name">佐藤 美咲</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commitments -->
+    <section class="section bg-sub">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-header__en">Our Policy</span>
+                <h2 class="section-header__ja">3つのこだわり</h2>
+                <div class="section-header__line"></div>
+            </div>
+
+            <!-- Item 1 -->
+            <div class="policy-item fade-in-up">
+                <div class="policy-img placeholder-img" data-label="Counseling"
+                    style="background: linear-gradient(135deg, #f5e6e8, #edd4d8);"></div>
+                <div class="policy-content">
+                    <span class="policy-num">01</span>
+                    <h3 class="policy-title">一人ひとりに寄り添うカウンセリング</h3>
+                    <p class="policy-desc">初回は30分以上のカウンセリング時間を確保し、お悩みや生活習慣を丁寧にヒアリング。表面的なケアだけでなく、根本的な解決に向けたプランをご提案します。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="policy-item policy-item--reverse fade-in-up">
+                <div class="policy-img placeholder-img" data-label="Treatment"
+                    style="background: linear-gradient(135deg, #e6efe3, #d4e5cf);"></div>
+                <div class="policy-content">
+                    <span class="policy-num">02</span>
+                    <h3 class="policy-title">結果にこだわるオーダーメイド施術</h3>
+                    <p class="policy-desc">マニュアル通りの施術は行いません。その日の肌状態や体調に合わせて、使用する化粧品や機器、手技の強弱を細かく調整する「完全オーダーメイド」です。</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="policy-item fade-in-up">
+                <div class="policy-img placeholder-img" data-label="Space"
+                    style="background: linear-gradient(135deg, #f5f0e0, #ede5cc);"></div>
+                <div class="policy-content">
+                    <span class="policy-num">03</span>
+                    <h3 class="policy-title">上質な空間とホスピタリティ</h3>
+                    <p class="policy-desc">
+                        完全個室のプライベート空間で、周りを気にせずリラックス。肌に触れるタオルやガウン、アフターティーまで、五感すべてで心地よさを感じていただけるよう厳選しています。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section container">
+        <div class="section-header fade-in-up">
+            <span class="section-header__en">Products & Machine</span>
+            <h2 class="section-header__ja">使用する化粧品・機器</h2>
+            <div class="section-header__line"></div>
+        </div>
+        <p class="text-center fade-in-up" style="max-width: 600px; margin: 0 auto 60px;">
+            効果と安全性を追求し、世界中から厳選した製品のみを使用しています。<br>
+            敏感肌の方でも安心して受けられるラインナップを揃えています。
+        </p>
+        <div class="products-grid fade-in-up">
+            <div class="product-item">
+                <div class="product-img placeholder-img" data-label="Cosmetics A"></div>
+                <h4>高機能エイジングケア<br>Brand A</h4>
+            </div>
+            <div class="product-item">
+                <div class="product-img placeholder-img" data-label="Machine B"></div>
+                <h4>最新キャビテーション<br>Machine B</h4>
+            </div>
+            <div class="product-item">
+                <div class="product-img placeholder-img" data-label="Cosmetics C"></div>
+                <h4>オーガニックオイル<br>Brand C</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- History -->
+    <section class="section bg-sub">
+        <div class="container" style="max-width: 800px;">
+            <div class="section-header fade-in-up">
+                <span class="section-header__en">History</span>
+                <h2 class="section-header__ja">これまでの歩み</h2>
+                <div class="section-header__line"></div>
+            </div>
+            <div class="history-list fade-in-up">
+                <div class="history-item">
+                    <div class="history-year">2015</div>
+                    <div class="history-content">
+                        <h3>表参道にGrâce開業</h3>
+                        <p>マンションの1室からスタート。お客様一人ひとりと向き合うプライベートサロンとしてオープン。</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-year">2017</div>
+                    <div class="history-content">
+                        <h3>累計施術 3,000件達成</h3>
+                        <p>口コミで広がり、予約の取れないサロンとして話題に。</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-year">2019</div>
+                    <div class="history-content">
+                        <h3>美容雑誌「MAQUIA」掲載</h3>
+                        <p>「通いたい実力派サロン」特集にて紹介されました。</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-year">2021</div>
+                    <div class="history-content">
+                        <h3>リニューアルオープン</h3>
+                        <p>現在の場所に移転し、個室3室に拡大。より上質な空間へ。</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="history-year">2024</div>
+                    <div class="history-content">
+                        <h3>累計施術 12,000件突破</h3>
+                        <p>多くのお客様に支えられ、9周年を迎えました。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="container fade-in-up">
+            <h2 class="cta-title">まずは無料カウンセリングから</h2>
+            <p class="cta-sub">あなたのお悩みをお聞かせください。最適なプランをご提案します。</p>
+            <a href="reserve.html" class="btn btn-primary btn-large btn-pulse"
+                style="margin-bottom: 24px;">無料カウンセリングを予約する</a>
+            <div class="cta-tel">
+                <a href="tel:03-1234-5678">Tel. 03-1234-5678</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__col">
+                    <a href="index.html" class="footer__logo">GRÂCE</a>
+                    <p style="margin-bottom: 16px;">表参道のトータルビューティーサロン。<br>完全個室で上質なひとときを。</p>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__links">
+                        <li><a href="concept.html">Concept - コンセプト</a></li>
+                        <li><a href="menu.html">Menu - 施術メニュー</a></li>
+                        <li><a href="price.html">Price - 料金表</a></li>
+                        <li><a href="voice.html">Voice - お客様の声</a></li>
+                        <li><a href="staff.html">Staff - スタッフ紹介</a></li>
+                        <li><a href="access.html">Access - アクセス</a></li>
+                        <li><a href="reserve.html">Reserve - ご予約</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <p><strong>Grâce（グラース）</strong></p>
+                    <p>〒150-0001<br>東京都渋谷区神宮前4-XX-XX 〇〇ビル3F</p>
+                    <br>
+                    <p><a href="tel:03-1234-5678">03-1234-5678</a></p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Grâce Total Beauty Salon. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

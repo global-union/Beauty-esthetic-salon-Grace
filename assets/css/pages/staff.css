@@ -1,0 +1,187 @@
+/* =========================================================================
+   Staff Page Styles
+   ========================================================================= */
+
+/* === Representative Profile === */
+.rep-profile {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.rep-img {
+    width: 350px;
+    aspect-ratio: 3/4;
+    border-radius: var(--radius-card);
+    flex-shrink: 0;
+}
+
+.rep-content {
+    flex-grow: 1;
+}
+
+.rep-role {
+    display: block;
+    color: var(--gold);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-family: var(--font-logo);
+    letter-spacing: 0.05em;
+}
+
+.rep-name {
+    font-size: 28px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 16px;
+}
+
+.rep-name-en {
+    font-size: 16px;
+    color: var(--text-sub);
+    font-weight: 400;
+    margin-left: 12px;
+    font-family: var(--font-logo);
+}
+
+.rep-text {
+    line-height: 1.8;
+    margin-bottom: 24px;
+    color: var(--text-sub);
+}
+
+.cert-list {
+    background: var(--bg-main);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.cert-list li {
+    font-size: 13px;
+    margin-bottom: 8px;
+    margin-left: 18px;
+    list-style-type: disc;
+    color: var(--text-main);
+}
+
+@media (max-width: 900px) {
+    .rep-profile {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .rep-img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+/* === Staff Grid === */
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.staff-card {
+    background: var(--white);
+    padding: 0;
+    /* Image spans full width */
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    transition: var(--transition-base);
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.staff-card__img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-position: top;
+}
+
+.staff-card__content {
+    padding: 24px;
+}
+
+.staff-card__role {
+    font-size: 12px;
+    color: var(--gold);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.staff-card__name {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.staff-card__name-en {
+    font-size: 12px;
+    color: #999;
+    font-weight: 400;
+    margin-left: 8px;
+    font-family: var(--font-logo);
+}
+
+.staff-card__msg {
+    font-size: 14px;
+    color: var(--text-sub);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    min-height: 4.8em;
+    /* 3 lines roughly */
+}
+
+.staff-card__spec {
+    font-size: 12px;
+    background: var(--bg-sub);
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.staff-card__spec li {
+    margin-bottom: 4px;
+    color: var(--text-main);
+}
+
+.staff-card__spec li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* === Training Box === */
+.training-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.training-content {
+    flex: 1;
+}
+
+.training-img {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .training-box {
+        flex-direction: column;
+    }
+
+    .training-img {
+        width: 100%;
+    }
+}
