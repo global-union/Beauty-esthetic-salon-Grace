@@ -14,8 +14,7 @@
     text-align: center;
 }
 
-
-.hero-slider {
+.hero-video-wrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -24,11 +23,29 @@
     z-index: 1;
 }
 
-.hero-img {
+.hero-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    display: none;
+    /* Hide both initially */
+}
+
+/* Default to PC video */
+.hero-video--pc {
+    display: block;
+}
+
+/* Switch to SP video on smaller screens */
+@media (max-width: 768px) {
+    .hero-video--pc {
+        display: none;
+    }
+
+    .hero-video--sp {
+        display: block;
+    }
 }
 
 
@@ -85,10 +102,10 @@
     }
 }
 
-.hero__badge {
-    position: absolute;
-    top: 60px;
-    left: 10px;
+.floating-badge {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
     width: 100px;
     height: 100px;
     background-color: var(--pink);
@@ -101,18 +118,22 @@
     transform: rotate(-10deg);
     font-family: var(--font-heading-jp);
     box-shadow: 0 4px 15px rgba(215, 114, 124, 0.4);
-    z-index: 4;
+    z-index: 1000;
     animation: float 3s ease-in-out infinite;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: background-color 0.3s ease, opacity 0.5s ease, visibility 0.5s ease;
 }
 
-@media (max-width: 768px) {
-    .hero__badge {
-        width: 80px;
-        height: 80px;
-        font-size: 12px;
-        top: 40px;
-        left: 0;
-    }
+.floating-badge.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.floating-badge:hover {
+    background-color: #c9636c;
 }
 
 @keyframes float {
@@ -128,12 +149,103 @@
 }
 
 @media (max-width: 768px) {
-    .hero__badge {
-        top: 80px;
-        left: 20px;
+    .floating-badge {
         width: 80px;
         height: 80px;
         font-size: 12px;
+        bottom: 80px;
+        right: 15px;
+    }
+}
+
+.hero__line {
+    width: 40px;
+    height: 1px;
+    background-color: var(--gold);
+    margin: 0 auto 32px auto;
+}
+
+.hero__intro {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 2.2;
+    color: var(--text-main);
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto 40px;
+}
+
+.hero__intro-empathy {
+    font-size: 14px;
+    color: var(--text-sub);
+    margin-bottom: 24px;
+}
+
+.hero__badge-inline {
+    display: inline-block;
+    background-color: var(--pink);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 20px;
+    border-radius: 50px;
+    margin-bottom: 24px;
+}
+
+.hero__intro-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.hero__intro-btn {
+    padding: 16px 48px;
+    border-radius: var(--radius-btn);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+
+.hero__intro-btn-outline {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-main);
+    transition: var(--transition-base);
+}
+
+.hero__intro-btn-outline:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.hero__micro-copy {
+    font-size: 13px;
+    color: var(--text-sub);
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.check-icon {
+    color: var(--gold);
+}
+
+@media (max-width: 480px) {
+    .hero__intro-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__intro-btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .hero__micro-copy {
+        flex-direction: column;
+        gap: 8px;
     }
 }
 

@@ -62,34 +62,46 @@
 
     <!-- Hero -->
     <section class="hero">
-        <div class="swiper hero-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="assets/images/hero_01.webp" alt="Grace Salon Hero 1" class="hero-img">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/hero_02.webp" alt="Grace Salon Hero 2" class="hero-img">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/hero_03.webp" alt="Grace Salon Hero 3" class="hero-img">
-                </div>
-            </div>
+        <div class="hero-video-wrapper">
+            <!-- スマホ用 -->
+            <video src="assets/videos/hero_sp.mp4" class="hero-video hero-video--sp" autoplay loop muted
+                playsinline></video>
+            <!-- PC用 -->
+            <video src="assets/videos/hero_pc.mp4" class="hero-video hero-video--pc" autoplay loop muted
+                playsinline></video>
         </div>
         <div class="hero__overlay"></div>
-        <div class="hero__content">
-            <h1 class="hero__logo fade-in-up">GRÂCE</h1>
-            <p class="hero__catch fade-in-up">あなただけの美しさを、ここから。</p>
-            <p class="hero__sub fade-in-up">フェイシャル・ボディ・脱毛 — トータルビューティーで叶える、内面から輝く美</p>
-            <div class="hero__actions fade-in-up">
-                <a href="reserve.html" class="btn btn-primary btn-large btn-pulse">初回体験を予約する</a>
-                <a href="menu.html" class="btn btn-outline btn-large">メニュー・料金を見る</a>
-            </div>
-            <div class="hero__badge">
-                <span>初回限定</span><br>50%OFF
-            </div>
+    </section>
+
+    <!-- Hero Text -->
+    <section class="section container" style="text-align: center; padding-top: 40px; padding-bottom: 20px;">
+        <h1 class="hero__logo fade-in-up" style="color: var(--text-main);">GRÂCE</h1>
+        <p class="hero__catch fade-in-up" style="color: var(--text-main);">あなただけの美しさを、ここから。</p>
+        <p class="hero__sub fade-in-up" style="color: var(--text-sub); margin-bottom: 24px;">フェイシャル・ボディ・脱毛 —
+            トータルビューティーで叶える、内面から輝く美</p>
+
+        <div class="hero__line fade-in-up"></div>
+
+        <div class="hero__intro fade-in-up">
+            <p class="hero__intro-empathy">「自分に合うサロンが見つからない」「エステは敷居が高い」</p>
+            <p class="hero__intro-text">
+                そんなあなたのために、Grâceは生まれました。<br>
+                国家資格を持つエスティシャンが、完全個室で<br>
+                あなただけの施術プランをご提案します。
+            </p>
         </div>
-        <div class="scroll-down">
-            <span>Scroll</span>
+
+        <div class="hero__badge-inline fade-in-up">初回限定 50%OFF</div>
+
+        <div class="hero__intro-actions fade-in-up">
+            <a href="reserve.html" class="btn btn-primary hero__intro-btn">初回体験を予約する</a>
+            <a href="menu.html" class="btn hero__intro-btn-outline hero__intro-btn">メニュー・料金を見る</a>
+        </div>
+
+        <div class="hero__micro-copy fade-in-up">
+            <span><span class="check-icon">✓</span> カウンセリング無料</span>
+            <span><span class="check-icon">✓</span> 強引な勧誘なし</span>
+            <span><span class="check-icon">✓</span> 当日予約OK</span>
         </div>
     </section>
 
@@ -494,6 +506,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating Badge -->
+    <a href="reserve.html" class="floating-badge">
+        <span>初回限定</span><br>50%OFF
+    </a>
 
     <!-- Floating CTA -->
     <div class="floating-cta">

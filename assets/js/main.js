@@ -61,17 +61,33 @@ document.addEventListener('DOMContentLoaded', () => {
   animatedElements.forEach(el => observer.observe(el));
 
 
-  // --- 4. Floating CTA Visibility ---
+  // --- 4. Floating Elements Visibility ---
   const floatingCta = document.querySelector('.floating-cta');
-  if (floatingCta) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
+  const floatingBadge = document.querySelector('.floating-badge');
+  const heroSection = document.querySelector('.hero');
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    // Show floating CTA on mobile after scrolling a bit
+    if (floatingCta) {
+      if (scrollY > 100) {
         floatingCta.classList.add('is-visible');
       } else {
         floatingCta.classList.remove('is-visible');
       }
-    });
-  }
+    }
+
+    // Show floating badge only after scrolling past the hero section
+    if (floatingBadge) {
+      const heroHeight = heroSection ? heroSection.offsetHeight : window.innerHeight;
+      if (scrollY > heroHeight - 100) {
+        floatingBadge.classList.add('is-visible');
+      } else {
+        floatingBadge.classList.remove('is-visible');
+      }
+    }
+  });
 
 
   // --- 5. Accordion (FAQ / Notes) ---
