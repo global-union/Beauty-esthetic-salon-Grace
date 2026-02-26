@@ -297,41 +297,6 @@
     color: #888;
 }
 
-/* === Floating CTA (Mobile) === */
-.floating-cta {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 12px;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    z-index: 999;
-    display: none;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
-    animation: slideUp 0.3s ease-out;
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(100%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
-@media (max-width: 768px) {
-    .floating-cta.is-visible {
-        display: block;
-    }
-}
-
-.floating-cta .btn {
-    width: 100%;
-    padding: 10px;
-}
 
 /* === Cards === */
 .card {

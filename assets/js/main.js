@@ -62,21 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // --- 4. Floating Elements Visibility ---
-  const floatingCta = document.querySelector('.floating-cta');
   const floatingLineCta = document.querySelector('.floating-line-cta');
   const heroSection = document.querySelector('.hero');
 
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
-
-    // Show floating CTA on mobile after scrolling a bit
-    if (floatingCta) {
-      if (scrollY > 100) {
-        floatingCta.classList.add('is-visible');
-      } else {
-        floatingCta.classList.remove('is-visible');
-      }
-    }
 
     // Show floating LINE CTA only after scrolling past the hero section
     if (floatingLineCta) {
