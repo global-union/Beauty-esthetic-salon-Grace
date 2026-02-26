@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 4. Floating Elements Visibility ---
   const floatingCta = document.querySelector('.floating-cta');
-  const floatingBadge = document.querySelector('.floating-badge');
+  const floatingLineCta = document.querySelector('.floating-line-cta');
   const heroSection = document.querySelector('.hero');
 
   window.addEventListener('scroll', () => {
@@ -78,13 +78,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // Show floating badge only after scrolling past the hero section
-    if (floatingBadge) {
+    // Show floating LINE CTA only after scrolling past the hero section
+    if (floatingLineCta) {
       const heroHeight = heroSection ? heroSection.offsetHeight : window.innerHeight;
       if (scrollY > heroHeight - 100) {
-        floatingBadge.classList.add('is-visible');
+        floatingLineCta.classList.add('is-visible');
       } else {
-        floatingBadge.classList.remove('is-visible');
+        floatingLineCta.classList.remove('is-visible');
       }
     }
   });
