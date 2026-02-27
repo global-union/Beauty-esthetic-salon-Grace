@@ -77,15 +77,17 @@
 
 .hero__catch {
     font-family: var(--font-heading-jp);
-    font-size: clamp(20px, 4vw, 32px);
+    font-size: clamp(16px, 4.2vw, 32px);
     font-weight: 200;
     margin-bottom: 16px;
+    white-space: nowrap;
 }
 
 .hero__sub {
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: clamp(10px, 2.6vw, 16px);
     opacity: 0.9;
     margin-bottom: 40px;
+    white-space: nowrap;
 }
 
 .hero__actions {
@@ -115,7 +117,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
@@ -160,6 +162,7 @@
         transform: translate(-50%, -50%) scale(1);
         opacity: 0.6;
     }
+
     100% {
         transform: translate(-50%, -50%) scale(1.5);
         opacity: 0;
