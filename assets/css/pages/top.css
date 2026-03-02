@@ -205,6 +205,12 @@
     margin: 0 auto 40px;
 }
 
+.hero__intro-line1 {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: clamp(10px, 4vw, 15px);
+}
+
 .hero__intro-empathy {
     font-size: 14px;
     color: var(--text-sub);
